@@ -30,19 +30,17 @@
 ### Retry with For-loop
 
 	public static void retryWithForLoop() {
-		
-		int maxRetry = 3;
-		
-		for (int i = 0; i < maxRetry; i++) {
-			try {
-				System.out.println("Retry : " + i);
-				doSomething(i);
-				break;
-			} catch (Exception exception) {
 
-			}
-		}
-		
+	    int maxRetry = 3;
+
+	    for (int i = 0; i < maxRetry; i++) {
+		try {
+		    System.out.println("Retry : " + i);
+		    doSomething(i);
+		    break;
+		} catch (Exception exception) {}
+	    }
+
 	}
 
 ### Retry with Recusive function
