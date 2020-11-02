@@ -1,7 +1,5 @@
 # Retry-Java-Example
 
-### Retry with Wile-loop
-
     public static void main(String[] args) {
         retryWithWileLoop();
     }
@@ -11,6 +9,8 @@
             throw new NullPointerException();
         }
     }
+
+### Retry with Wile-loop
 	
     public static void retryWithWileLoop() {
         int maxRetry = 3;
