@@ -1,6 +1,6 @@
 # Retry-Java-Example
 
-### Retry with Wile loop
+### Retry with Wile-loop
 
     public static void main(String[] args) {
         retryWithWileLoop();
@@ -27,10 +27,10 @@
         }
     }
 
-### Retry with For loop
+### Retry with For-loop
 
 ### Retry with Recusive function
 
 ### Retry with Spring-Retry
 
-### Retry with Retry Pattern
+### Retry with Retry-Pattern
