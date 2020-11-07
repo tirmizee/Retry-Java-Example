@@ -59,7 +59,7 @@
 ### Retry with Recusive function with throw exception.
 
 	public static void retryWithRecursive(int i, int maxRetry, Exception e) throws Exception {
-		if (i >= maxRetry) throw e;
+	    if (i >= maxRetry) throw e;
 		
 	    try {
 	    	System.out.println("Retry : " + i);
