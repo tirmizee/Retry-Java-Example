@@ -58,14 +58,15 @@
 
 ### Retry with Recusive function with throw exception.
 
-	public static void retryWithRecursive(int i, int maxRetry, Exception e) {
-	    if (i >= maxRetry) return e;
+	public static void retryWithRecursive(int i, int maxRetry, Exception e) throws Exception {
+		if (i >= maxRetry) throw e;
 		
 	    try {
 	    	System.out.println("Retry : " + i);
 	    	doSomething(i);
-	    } catch (Exception e) {
-	    	retryWithRecursive(++i, maxRetry, e);
+	    } catch (Exception exception) {
+	    	sleep(500);
+	    	retryWithRecursive(++i, maxRetry, exception);
 	    }
 	}
 
