@@ -56,6 +56,19 @@
 	    }
 	}
 
+### Retry with Recusive function with throw exception.
+
+	public static void retryWithRecursive(int i, int maxRetry, Exception e) {
+	    if (i >= maxRetry) return e;
+		
+	    try {
+	    	System.out.println("Retry : " + i);
+	    	doSomething(i);
+	    } catch (Exception e) {
+	    	retryWithRecursive(++i, maxRetry, e);
+	    }
+	}
+
 ### Retry with Spring-Retry
 
 ### Retry with Retry-Pattern
